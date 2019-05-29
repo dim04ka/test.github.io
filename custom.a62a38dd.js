@@ -18689,28 +18689,34 @@ $(function ($) {
   }
 }); // закрытие модальных окон по клику вне области
 
-$(document).mouseup(function (e) {
-  // отслеживаем событие клика по веб-документу
-  var blockOverlays = $(".overlays"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
-
-  if (blockOverlays.is(e.target)) {
-    blockOverlays[0].classList.remove("overlays-active");
-
-    if ($(".project") != undefined) {
-      $(".project")[0].classList.remove("project-active");
+$(document).mouseup(function (e) {// отслеживаем событие клика по веб-документу
+  // var blockOverlays= $(".overlays"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+  //   if (blockOverlays.is(e.target)) {
+  //     blockOverlays[0].classList.remove("overlays-active");
+  //     if ($(".project") != undefined) {
+  //       $(".project")[0].classList.remove("project-active");
+  //     }
+  //     if ($(".form").length > 0) {  //-active
+  //       $(".form")[0].classList.remove("form-open");
+  //     }
+  //     if ($(".form__wrapper") != undefined) {  
+  //       $(".form__wrapper")[0].classList.remove("form__wrapper-open");
+  //     }
+  //     $("body").css('overflow','scroll');
+  //   }
+});
+$(function () {
+  // better to use $(document).ready(function(){
+  // $('.overlays-active').on('click touchstart', function() {
+  //     alert(123);
+  // });
+  var btn = document.querySelector('.overlays-active');
+  btn = addEventListener('click', function (e) {
+    if (e.target.classList.contains("overlays-active")) {
+      alert(1);
+      e.target.classList.remove("overlays-active");
     }
-
-    if ($(".form").length > 0) {
-      //-active
-      $(".form")[0].classList.remove("form-open");
-    }
-
-    if ($(".form__wrapper") != undefined) {
-      $(".form__wrapper")[0].classList.remove("form__wrapper-open");
-    }
-
-    $("body").css('overflow', 'scroll');
-  }
+  });
 }); // закрытие модальных окон по клику personal_page
 
 $(document).mouseup(function (e) {
