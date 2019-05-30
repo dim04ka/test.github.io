@@ -12736,7 +12736,8 @@ progress {
     }
 
 .overflow {
-    overflow: hidden;
+    height: 100%; 
+    overflow-x: hidden;
 }
 
 
