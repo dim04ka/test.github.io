@@ -27,6 +27,8 @@ jQuery(function($){
   });
 })
 
+alert(1);
+
 $("body").on("click", function (e) {
   e.preventDefault();
  console.log(e.target.classList)});
