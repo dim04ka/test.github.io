@@ -27,7 +27,7 @@ jQuery(function($){
   });
 })
 
-$(document).on("click", function (e) {
+$("body").on("click", function (e) {
   e.preventDefault();
  console.log(e.target.classList)});
 
