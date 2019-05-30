@@ -12731,8 +12731,8 @@ progress {
 
 
 .project-active {
-        -webkit-transform: translateX(50%);
-                transform: translateX(50%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
 
 .overflow {
@@ -12763,8 +12763,8 @@ progress {
     left: 0;
     bottom: 0;
     right: 0;
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vh;
+    width: 100vw;
     z-index: -1;
     opacity: 0;
     background: #333;

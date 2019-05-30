@@ -7,7 +7,8 @@
   <title>Диссертации на заказ в Москве. Заказать написание диссертаций срочно</title>
   <link rel="stylesheet" href="fontawesome-all.min.6da9b492.css">
   <link rel="stylesheet" href="custom.59417457.css">
-  
+  <link rel="stylesheet" href="datalist.css">
+
 </head>
 <body class="body__otherpage">
 <div class="topline">
@@ -293,9 +294,20 @@
   </footer>
   <a class="arrowup"><i class="fal fa-arrow-up"></i></a>
 
-
+<script>
+    (function() {
+        var inputs = document.getElementsByTagName('input');
+        for( var i = 0; i < inputs.length; i++ ) {
+            var input = inputs[i];
+            input.onchange = function(evt) {
+                var elem = evt ? evt.target : window.event.srcElement;
+                alert('new value: ' + elem.value);
+            };
+        }
+    }());
+    </script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="custom.a62a38dd.js"></script>
-
+  <script src="datalist.polyfill.js"></script>
 </body></html>
