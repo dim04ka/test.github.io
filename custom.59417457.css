@@ -12774,7 +12774,10 @@ progress {
 }
 
 .overlays-active {
+
         z-index: 50;
         opacity: .4;
         transition: opacity 1s;
+
+        cursor: pointer;
     }
