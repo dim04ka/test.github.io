@@ -12735,6 +12735,10 @@ progress {
                 transform: translateX(50%);
     }
 
+.overflow {
+    overflow: hidden;
+}
+
 
 @media (max-width: 768px) {
 
