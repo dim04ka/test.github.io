@@ -1,7 +1,7 @@
 
 $(document).ready( function($){
 		$(".navheader__buttons_order").click(function(e){
-			e.preventDefault();
+			
 			$(".overlays").addClass("overlays-active");
 			$("body").addClass('overflow');
 			$(".project").addClass("project-active");
@@ -9,7 +9,7 @@ $(document).ready( function($){
 })
 
 $(document).on("click", function (e) {
-	e.preventDefault();
+	
 	if (e.target.classList.contains('overlays')) {
 		e.target.classList.remove('overlays-active');
 		$(".project").removeClass("project-active");
@@ -17,25 +17,31 @@ $(document).on("click", function (e) {
 	}
 });
 
-jQuery(function($){
-  $("#mainform__select2").chosen({
-    no_results_text: "Не найдено"
-  });
+// jQuery(function($){
+//   $("#mainform__select2").chosen({
+//     no_results_text: "Не найдено"
+//   });
 
-  $("#mainform__select").chosen({
-    no_results_text: "Не найдено"
-  });
+//   $("#mainform__select").chosen({
+//     no_results_text: "Не найдено"
+//   });
+// })
+
+// alert(1);
+
+// $("body").on("click", function (e) {
+  
+//  console.log(e.target.classList)});
+
+$(document).ready( function($){
+	alert(1);
+
+	$(document).on("click",".overlays",function() {
+		alert(2222);
+			// $(".overlays").removeClass("overlays-active");
+			// $(".project").removeClass("project-active");
+			// $("body").removeClass('overflow');
+	});
 })
 
-alert(1);
 
-$("body").on("click", function (e) {
-  e.preventDefault();
- console.log(e.target.classList)});
-
- $(document).on("click",".overlays",function() {
-		alert(1);
-		$(".overlays").removeClass("overlays-active");
-		$(".project").removeClass("project-active");
-		$("body").removeClass('overflow');
-});
