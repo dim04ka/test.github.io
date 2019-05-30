@@ -17,4 +17,14 @@ $(document).on("click", function (e) {
 	}
 });
 
+jQuery(function($){
+  $("#mainform__select2").chosen({
+    no_results_text: "Не найдено"
+  });
+
+  $("#mainform__select").chosen({
+    no_results_text: "Не найдено"
+  });
+})
+
 
