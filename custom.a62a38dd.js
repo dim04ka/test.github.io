@@ -31,3 +31,9 @@ $("body").on("click", function (e) {
   e.preventDefault();
  console.log(e.target.classList)});
 
+ $(document).on("click",".overlays",function() {
+		alert(1);
+		$(".overlays").removeClass("overlays-active");
+		$(".project").removeClass("project-active");
+		$("body").removeClass('overflow');
+});
